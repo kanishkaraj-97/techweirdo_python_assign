@@ -2,8 +2,8 @@
 
 API details : 
 
-## To get details of a medicine using either its id or name
-# GET '/medicine/?id=1' : 
+# To get details of a medicine using either its id or name
+## GET '/medicine/?id=1' : 
 
 parameters : 
  <!-- Enter either name or id. Atleast one in mandatory. You can enter only one.  -->
@@ -26,8 +26,8 @@ response :
     ]
     }
 
-## To add a new medicine to DB
-# POST '/medicine/' : 
+# To add a new medicine to DB
+## POST '/medicine/' : 
 
 request body : 
     {
@@ -45,8 +45,8 @@ response :
     "msg": "Medicine details succesfully entered."
     }
 
-## To get user details using either its id or first_name
-# GET '/users/?first_name=user_1' : 
+# To get user details using either its id or first_name
+## GET '/users/?first_name=user_1' : 
 
 parameters : 
     <!-- Enter either first_name or id. Atleast one in mandatory. You can enter only one. -->
@@ -76,8 +76,8 @@ response :
     ]
     }
 
-## To add a new user to the DB
-# POST '/users' : 
+# To add a new user to the DB
+## POST '/users' : 
 
 request : 
     {
@@ -94,9 +94,9 @@ response :
     "msg": "User details succesfully entered."
     }
 
-## To get what are the medicine one particular user is supposed to take given a particular date as parameter, and out of these which the users have already taken
+# To get what are the medicine one particular user is supposed to take given a particular date as parameter, and out of these which the users have already taken
 
-# GET '/medicine/intake/?user=1&date=2021-08-25&status=taken' :
+## GET '/medicine/intake/?user=1&date=2021-08-25&status=taken' :
 
 paramentrs : 
 <!-- All parameters are complusury  -->
@@ -131,8 +131,8 @@ response :
     ]
     }
 
-## To create a new medicine intake tracker
-# POST '/medicine/intake/' :
+# To create a new medicine intake tracker
+## POST '/medicine/intake/' :
 
 request :
     {
@@ -150,8 +150,8 @@ request :
     "msg": "Medicine Intake detail for User : user_1  succesfully entered."
 }
 
-##  To mark one / multiple medicine as taken for a particular date at a given time
-# PATCH '/medicine/intake/' :
+#  To mark one / multiple medicine as taken for a particular date at a given time
+## PATCH '/medicine/intake/' :
 
 request : 
 [
